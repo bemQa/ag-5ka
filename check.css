@@ -254,3 +254,114 @@ body {
 .bootstrap-datetimepicker-widget.dropdown-menu {
     width: 17em;
 }
+
+.angular-uf-container.angular-uf-message p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #572A13;
+    margin-bottom: 20px;
+}
+
+zxing-scanner {
+    border-color: #682700 !important;
+    border: 2px solid;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 20px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+app-root button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 15px 0;
+    font-family: 'OfficinaSans';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%);
+    box-shadow: 2px 2px 5px #870B18;
+    border-radius: 30px;
+    border: none;
+    z-index: 1;
+    transition: all .2s linear;
+    outline: none;
+    cursor: pointer;
+}
+
+app-root button:hover {
+    box-shadow: none;
+}
+
+dropzone {
+    max-width: 240px;
+    min-height: 156px;
+    background: transparent;
+    border: 2px solid #682700;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: #572A13;
+    padding: 10px;
+}
+
+app-root dropzone>.dropzone.dz-wrapper .dz-message {
+    border: none;
+    background: none;
+    margin: 3rem 0;
+}
+
+app-root dropzone>.dropzone.dz-wrapper.dz-started .dz-message {
+    order: 1;
+    margin: 20px 0;
+}
+
+.angular-uf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+app-root select {
+    width: 200px;
+    height: 32px;
+    margin: 0 auto 20px;
+    padding: 0 20px 0 10px;
+    border: 1px solid transparent;
+    background: #fff;
+    border-radius: 20px;
+}
+
+app-root .dropzone .dz-preview.dz-image-preview {
+    width: 200px;
+    height: 200px;
+}
+
+app-root .dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+}
+
+.angular-uf-no-device-message,
+.angular-uf-device-check-err-message,
+.angular-uf-restrict-message {
+    text-align: center;
+}
