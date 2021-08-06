@@ -3144,7 +3144,7 @@ table td:nth-child(3) {
     .profile-name {
         font-size: 21px;
         line-height: 28px;
-        min-height: auto;
+        min-height: 58px;
     }
 
     .profile-name span {

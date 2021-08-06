@@ -297,4 +297,25 @@ $(document).ready(function () {
             ]
         });
     });
+
+    function pinCode() {
+        $('.pincode').keydown(function(e){
+            $(this).val('');
+        });
+         
+        $('.pincode').keyup(function(e){
+            var $wrap = $(this).closest('.call-wrapper');
+            var $inputs = $wrap.find('input');   
+            var val = $(this).val();
+            
+            if(val == val.replace(/[0-9]/, '')) {
+                $(this).val('');
+                return false;
+            }
+            
+            $inputs.eq($inputs.index(this) + 1).focus();
+        });
+    }
+
+    pinCode();
 });
