@@ -1268,7 +1268,8 @@ span.error {
     z-index: 0;
 }
 
-.lk-page-top::before {
+.lk-page-top::before,
+.winner-page-top::before {
     top: -40px;
     left: -500px;
     right: -500px;
@@ -1285,6 +1286,60 @@ span.error {
 
 .inner-page .container {
     z-index: 1;
+}
+
+.winner-500000 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 640px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+.winner-500000-title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.winner-500000-img {
+    position: relative;
+    max-width: 180px;
+    width: 100%;
+    margin: 0 50px;
+}
+
+.winner-500000-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 246px;
+    background: url(../img/light-500000.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.winner-500000-img img {
+    position: relative;
+}
+
+.winner-500000-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.winner-500000-name span {
+    font-weight: normal;
 }
 
 .winners-page {
@@ -2915,7 +2970,8 @@ table td:nth-child(3) {
         min-height: calc(100% + 80px);
     }
 
-    .lk-page-top::before {
+    .lk-page-top::before,
+    .winner-page-top::before {
         min-height: calc(100% + 100px);
         background-size: cover;
     }
@@ -2935,6 +2991,37 @@ table td:nth-child(3) {
 	.inner-page {
 		padding: 30px 0 50px;
 	}
+
+    .winner-500000 {
+        flex-direction: column;
+    }
+
+    .winner-500000-title {
+        position: relative
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .winner-500000-img {
+        max-width: 120px;
+        margin: 15px auto 10px
+    }
+
+    .winner-500000-img::before {
+        left: -100px;
+        right: -100px;
+        opacity: 0.8;
+    }
+
+    .winner-500000-name {
+        position: relative
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        z-index: 1;
+    }
 
 	.winners-page {
         padding-top: 100px;
